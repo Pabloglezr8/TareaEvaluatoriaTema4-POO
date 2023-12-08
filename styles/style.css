@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Mulish;
+    src: url('/assets/fonts/Mulish-Italic-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/assets/imgs/bgimagen.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Mulish;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: #f5ba26;
+    font-size: 3rem;
+    font-family: Mulish;
+    display: block;
+    font-family:monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 22ch;
+    text-shadow: -1px 0 rgb(216, 29, 29), 0 1px rgb(216, 29, 29), 1px 0 rgb(216, 29, 29), 0 -1px rgb(216, 29, 29), -2px 2px 0 rgb(216, 29, 29), 2px 2px 0 rgb(216, 29, 29), 1px 1px rgb(216, 29, 29), 2px 2px rgb(216, 29, 29), 3px 3px rgb(216, 29, 29), 4px 4px rgb(216, 29, 29), 5px 5px rgb(216, 29, 29);
+    animation: typing 10s steps(22) infinite alternate, blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.inventory-table-styles {
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.inventory-table-styles th,
+.inventory-table-styles td {
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+.inventory-table-styles th {
+    background-color: #f5ba26;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3),
+    0px -2px 1px rgba(0,0,0,03),
+    0px -3px 1px rgba(0,0,0,0.3);
+
+}
+
+.inventory-table-styles tr:hover {
+    color: white;
+    text-shadow: 0px 0px 9px #508AD3;
+}
+
+/* Estilos para el formulario con fondo negro */
+.product-form-styles {
+    background-color:none;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.container{
+    text-align: center;
+}
+
+
+/* Estilos para las etiquetas y campos de entrada */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    font-family: Mulish;
+    width: 15rem;
+    padding: 10px;
+    background-color: #f5ba26;
+    /* Borde con un tono más claro que el fondo */
+    border-radius: 20px;
+    color: rgb(216, 29, 29);
+    border: none;
+    /* Fondo negro para los campos de entrada */
+    outline: none;
+}
+
+input::placeholder{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(216, 29, 29);
+}
+
+
+/* Estilos para el botón */
+button {
+    margin: 2%;
+    border: none;
+    background-color: rgb(216, 29, 29);
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3),
+    0px -2px 1px rgba(0,0,0,03);
+    /* Color de fondo azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2)
+    /* Color de fondo azul más oscuro al pasar el cursor */
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+} 
+
